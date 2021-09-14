@@ -1,5 +1,5 @@
 Feature: Book a Flight ticket for different cities on Makemytrip
-Scenario: Verify the process of booking a flight in Makemytip for Bangalore to Dehli
+Scenario: Verify the process of booking a flight in Makemytrip for Bangalore to Dehli
 Given launch the makemytrip website
 And User click on pop-up
 When User select the cities in From and To field
@@ -17,7 +17,7 @@ And print the fair details
 And quite the browser
 
 
-Scenario: Verify the process of booking a flight in Makemytip for Bangalore to Dehli
+Scenario: Verify the process of booking a flight in Makemytrip for Bangalore to Mumbai
 Given launch the makemytrip website
 And User click on pop-up
 When User select the cities in From and To field
