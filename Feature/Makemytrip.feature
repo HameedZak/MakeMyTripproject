@@ -5,6 +5,7 @@ And User click on pop-up
 When User select the cities in From and To field
 |Delhi|
 And select the Departure and Return date along with Travel&class and click on Search button
+|25|26|
 Then User should be in flght detail screen
 When User selects Air india and Vistara flights in popular filter
 And User scroll down
@@ -23,6 +24,7 @@ And User click on pop-up
 When User select the cities in From and To field
 |Mumbai|
 And select the Departure and Return date along with Travel&class and click on Search button
+|25|26|
 Then User should be in flght detail screen
 When User selects Air india and Vistara flights in popular filter
 And User scroll down
