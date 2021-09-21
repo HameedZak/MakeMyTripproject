@@ -134,8 +134,15 @@ public class MakeMytPOM {
 
 	public void clickDepartureDate() {
 		// Departuredate.click();
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", Departuredate);
+		List<WebElement> elements = driver.findElements(By.xpath("//p[normalize-space(text()) = " + Ddate + "]"));
+
+		for (int i = 0; i < elements.size(); i++) {
+			if (elements.get(i).getText().contains(Ddate)) {
+				elements.get(i).click();
+				break;
+			}
+		}
+
 	}
 
 	public void clickOnReturn() {
@@ -144,6 +151,17 @@ public class MakeMytPOM {
 
 	public void clickReturnDate() {
 		ReturnDate.click();
+		
+		List<WebElement> elements = driver.findElements(By.xpath("//p[normalize-space(text()) = " + Rdate + "]"));
+
+		for (int i = 0; i < elements.size(); i++) {
+			if (elements.get(i).getText().contains(Rdate)) {
+				elements.get(i).click();
+				break;
+			}
+		}
+		
+		
 	}
 
 	public void clickOnTravelClass() {
