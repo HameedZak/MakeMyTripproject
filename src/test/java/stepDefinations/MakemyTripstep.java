@@ -38,13 +38,15 @@ public class MakemyTripstep extends CommonClass {
 	}
 
 	@When("select the Departure and Return date along with Travel&class and click on Search button")
-	public void select_the_departure_and_return_date_along_with_travel_class_and_click_on_search_button() {
+	public void select_the_departure_and_return_date_along_with_travel_class_and_click_on_search_button(DataTable args) {
 
 		// mp.clickOnDeparture();
-
-		mp.clickDepartureDate();
+                List<List<String>> data = args.asLists();
+		String ToCityy = data.get(0).get(0);
+		String ToCityy1= data.get(0).get(1);
+		mp.clickDepartureDate(ToCityy);
 		mp.clickOnReturn();
-		mp.clickReturnDate();
+		mp.clickReturnDate(ToCityy1);
 		mp.clickOnTravelClass();
 		mp.selectAdults();
 		mp.selectChilder();
