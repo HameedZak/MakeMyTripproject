@@ -132,7 +132,7 @@ public class MakeMytPOM {
 		Departure.click();
 	}
 
-	public void clickDepartureDate() {
+	public void clickDepartureDate(String Ddate) {
 		// Departuredate.click();
 		List<WebElement> elements = driver.findElements(By.xpath("//p[normalize-space(text()) = " + Ddate + "]"));
 
@@ -149,7 +149,7 @@ public class MakeMytPOM {
 		Return.click();
 	}
 
-	public void clickReturnDate() {
+	public void clickReturnDate(String Rdate) {
 		ReturnDate.click();
 		
 		List<WebElement> elements = driver.findElements(By.xpath("//p[normalize-space(text()) = " + Rdate + "]"));
